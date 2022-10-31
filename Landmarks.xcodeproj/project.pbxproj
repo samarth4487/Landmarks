@@ -11,6 +11,7 @@
 		10C545AB290FAE2200D2FDFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C545AA290FAE2200D2FDFD /* ContentView.swift */; };
 		10C545AD290FAE2200D2FDFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C545AC290FAE2200D2FDFD /* Assets.xcassets */; };
 		10C545B1290FAE2200D2FDFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C545B0290FAE2200D2FDFD /* Preview Assets.xcassets */; };
+		10C545B8290FE42A00D2FDFD /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C545B7290FE42A00D2FDFD /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		10C545AC290FAE2200D2FDFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10C545AE290FAE2200D2FDFD /* Landmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Landmarks.entitlements; sourceTree = "<group>"; };
 		10C545B0290FAE2200D2FDFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10C545B7290FE42A00D2FDFD /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				10C545A8290FAE2200D2FDFD /* LandmarksApp.swift */,
 				10C545AA290FAE2200D2FDFD /* ContentView.swift */,
+				10C545B7290FE42A00D2FDFD /* CircleImage.swift */,
 				10C545AC290FAE2200D2FDFD /* Assets.xcassets */,
 				10C545AE290FAE2200D2FDFD /* Landmarks.entitlements */,
 				10C545AF290FAE2200D2FDFD /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				10C545AB290FAE2200D2FDFD /* ContentView.swift in Sources */,
 				10C545A9290FAE2200D2FDFD /* LandmarksApp.swift in Sources */,
+				10C545B8290FE42A00D2FDFD /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
