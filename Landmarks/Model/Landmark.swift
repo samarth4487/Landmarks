@@ -8,6 +8,10 @@
 import Foundation
 import CoreLocation
 
+class LandmarksData: ObservableObject {
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 struct Landmark: Identifiable, Decodable {
     let id: Int
     let name: String
@@ -15,7 +19,7 @@ struct Landmark: Identifiable, Decodable {
     let state: String
     let description: String
     let imageName: String
-    let isFavorite: Bool
+    var isFavorite: Bool
     private let coordinates: Coordinates
     
     var locationCoordinates: CLLocationCoordinate2D {
@@ -49,5 +53,3 @@ func load<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
-
-let landmarks: [Landmark] = load("landmarkData.json")
