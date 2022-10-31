@@ -15,6 +15,7 @@ struct Landmark: Identifiable, Decodable {
     let state: String
     let description: String
     let imageName: String
+    let isFavorite: Bool
     private let coordinates: Coordinates
     
     var locationCoordinates: CLLocationCoordinate2D {
