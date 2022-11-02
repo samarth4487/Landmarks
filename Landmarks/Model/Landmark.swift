@@ -10,6 +10,16 @@ import CoreLocation
 
 class LandmarksData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    
+    var featured: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
+    
+    var categories: [String: [Landmark]] {
+        Dictionary(grouping: landmarks, by: {
+            $0.category.rawValue
+        })
+    }
 }
 
 struct Landmark: Identifiable, Decodable {
@@ -19,6 +29,8 @@ struct Landmark: Identifiable, Decodable {
     let state: String
     let description: String
     let imageName: String
+    let isFeatured: Bool
+    let category: Category
     var isFavorite: Bool
     private let coordinates: Coordinates
     
@@ -30,6 +42,12 @@ struct Landmark: Identifiable, Decodable {
 struct Coordinates: Decodable {
     let latitude: Double
     let longitude: Double
+}
+
+enum Category: String, Decodable, CaseIterable {
+    case lakes = "Lakes"
+    case rivers = "Rivers"
+    case mountains = "Mountains"
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
