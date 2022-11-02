@@ -21,6 +21,7 @@
 		10C545D22912A6D500D2FDFD /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C545D12912A6D500D2FDFD /* CategoryHome.swift */; };
 		10C545D42912AA2600D2FDFD /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C545D32912AA2600D2FDFD /* CategoryRow.swift */; };
 		10C545D62912AB5E00D2FDFD /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C545D52912AB5E00D2FDFD /* CategoryItem.swift */; };
+		10C545D92912C00300D2FDFD /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C545D82912C00300D2FDFD /* Tabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		10C545D12912A6D500D2FDFD /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		10C545D32912AA2600D2FDFD /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		10C545D52912AB5E00D2FDFD /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		10C545D82912C00300D2FDFD /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		10C545BF290FEE5D00D2FDFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10C545D72912BFF500D2FDFD /* Main */,
 				10C545D02912A6C100D2FDFD /* Category */,
 				10C545CF2912A6B700D2FDFD /* Landmark */,
 				10C545CE2912A6AD00D2FDFD /* Helpers */,
@@ -145,6 +148,14 @@
 				10C545D52912AB5E00D2FDFD /* CategoryItem.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		10C545D72912BFF500D2FDFD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				10C545D82912C00300D2FDFD /* Tabs.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 				10C545B8290FE42A00D2FDFD /* CircleImage.swift in Sources */,
 				10C545D62912AB5E00D2FDFD /* CategoryItem.swift in Sources */,
 				10C545BE290FE9B300D2FDFD /* Landmark.swift in Sources */,
+				10C545D92912C00300D2FDFD /* Tabs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
