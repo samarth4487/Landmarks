@@ -13,11 +13,7 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                Image(landmarksData.featured[0].imageName)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                Carousel(landmarks: landmarksData.featured)
                     .listRowInsets(EdgeInsets())
 
                 ForEach(landmarksData.categories.keys.sorted(), id: \.self) { categoryName in
