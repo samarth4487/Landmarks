@@ -18,7 +18,7 @@ struct LandmarkDetail: View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinates)
                 .frame(height: 300)
-            CircleImage(imageName: landmark.imageName)
+            CircleImage(imageName: landmark.imageName, resizable: false)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             VStack(alignment: .leading) {
